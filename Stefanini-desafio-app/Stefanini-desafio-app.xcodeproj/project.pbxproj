@@ -16,6 +16,7 @@
 		22FE6E4D2086DD35002D811F /* Stefanini_desafio_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E4C2086DD35002D811F /* Stefanini_desafio_appTests.swift */; };
 		22FE6E582086DD35002D811F /* Stefanini_desafio_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E572086DD35002D811F /* Stefanini_desafio_appUITests.swift */; };
 		22FE6E692086DDC1002D811F /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E682086DDC1002D811F /* ApiUtils.swift */; };
+		22FE6E6B2086DF99002D811F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 22FE6E6A2086DF99002D811F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		22FE6E572086DD35002D811F /* Stefanini_desafio_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stefanini_desafio_appUITests.swift; sourceTree = "<group>"; };
 		22FE6E592086DD35002D811F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22FE6E682086DDC1002D811F /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
+		22FE6E6A2086DF99002D811F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		22FE6E282086DD32002D811F = {
 			isa = PBXGroup;
 			children = (
+				22FE6E6A2086DF99002D811F /* README.md */,
 				22FE6E332086DD32002D811F /* Stefanini-desafio-app */,
 				22FE6E4B2086DD35002D811F /* Stefanini-desafio-appTests */,
 				22FE6E562086DD35002D811F /* Stefanini-desafio-appUITests */,
@@ -261,6 +264,7 @@
 			files = (
 				22FE6E422086DD34002D811F /* LaunchScreen.storyboard in Resources */,
 				22FE6E3F2086DD34002D811F /* Assets.xcassets in Resources */,
+				22FE6E6B2086DF99002D811F /* README.md in Resources */,
 				22FE6E3A2086DD32002D811F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

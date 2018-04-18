@@ -1,1 +1,0 @@
-# Stefanini-desafio-app
