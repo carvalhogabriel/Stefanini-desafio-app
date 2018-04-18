@@ -2,7 +2,7 @@
 //  Hero.swift
 //  Stefanini-desafio-app
 //
-//  Created by School Picture Dev on 18/04/18.
+//  Created by Gabriel Carvalho Dev on 18/04/18.
 //  Copyright © 2018 gabrielcarvalho. All rights reserved.
 //
 

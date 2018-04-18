@@ -2,7 +2,7 @@
 //  Stefanini_desafio_appUITests.swift
 //  Stefanini-desafio-appUITests
 //
-//  Created by Mario C on 17/04/2018.
+//  Created by Gabriel Carvalho on 17/04/2018.
 //  Copyright © 2018 gabrielcarvalho. All rights reserved.
 //
 

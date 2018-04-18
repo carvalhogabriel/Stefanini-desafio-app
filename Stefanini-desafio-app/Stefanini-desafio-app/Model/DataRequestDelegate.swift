@@ -2,7 +2,7 @@
 //  DataRequestDelegate.swift
 //  Stefanini-desafio-app
 //
-//  Created by Mario C on 18/04/2018.
+//  Created by Gabriel Carvalho on 18/04/2018.
 //  Copyright © 2018 gabrielcarvalho. All rights reserved.
 //
 

@@ -18,6 +18,7 @@ class HeroDetailViewController: UIViewController {
     
     // MARK: - @IBActions
     @IBAction func swipeDownAction(_ sender: Any) {
+        //fecha a tela caso o usuario arraste para baixo
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -39,6 +40,7 @@ class HeroDetailViewController: UIViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        //carrega a tela com os dados do heroi
         self.prepareView()
     }
     

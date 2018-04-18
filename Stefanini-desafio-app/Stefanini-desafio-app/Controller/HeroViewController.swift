@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Stefanini-desafio-app
 //
-//  Created by Mario C on 17/04/2018.
+//  Created by Gabriel Carvalho on 17/04/2018.
 //  Copyright © 2018 gabrielcarvalho. All rights reserved.
 //
 
@@ -19,18 +19,33 @@ class HeroViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var navigateToHeroDetail: Hero!
     private lazy var placeholderIcon = UIImage(named: "stefanini256")!
     
-    // MARK: - View Life Cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    // MARK: - Private Methods
+    private func buildAlertError(_ title: String, _ message: String) {
+        let alertError = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertError.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alertError, animated: true, completion: nil)
+    }
+    
+    private func prepareTableView() {
+        //chama a api para baixar os herois
         HeroApi.sharedInstance.getHeros {
             (hero, error) in
+            //se tiver erro cria um alerta com o erro, se náo carrega os herois na tableview
             if error != nil {
-              //fazer dialog de erro
+                //criado o alerta com o erro
+                self.buildAlertError("Error: \(String(describing: error?.code.description))", (error?.localizedDescription)!)
             } else {
+                //carregando os herois na tableview
                 self.hero = hero
                 self.tableView.reloadData()
             }
         }
+    }
+    // MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //preparando o carregamento da tableview
+        self.prepareTableView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +56,9 @@ class HeroViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Ao selecionar uma célula chama a tela de detalhes.
         if (self.hero.count > 0) {
+            //passando o heroi selecionado para a tela de detalhes
             self.navigateToHeroDetail = self.hero[indexPath.item]
+            //chamando a tela de detalhes
             self.performSegue(withIdentifier: "HeroDetail", sender: self)
         }
     }
@@ -87,6 +104,7 @@ class HeroViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //verifica qual tela é para abrir
         switch segue.destination {
+        //caso for a tela de detalhes passa o heroi para a tela e depois limpa a variavel da tela principal
         case let dvc as HeroDetailViewController:
             dvc.hero = self.navigateToHeroDetail
             self.navigateToHeroDetail = nil
