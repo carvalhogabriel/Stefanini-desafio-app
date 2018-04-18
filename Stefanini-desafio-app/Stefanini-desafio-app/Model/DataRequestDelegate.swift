@@ -9,13 +9,11 @@
 import Foundation
 
 
+import Foundation
 class DataRequestDelegate: NSObject, URLSessionDelegate, URLSessionTaskDelegate, URLSessionDataDelegate {
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        print("\(challenge.debugDescription)")
-        print("\(String(describing: challenge.error))")
-        print("\(String(describing: challenge.failureResponse))")
-        print("\(String(describing: challenge.proposedCredential))")
         completionHandler(Foundation.URLSession.AuthChallengeDisposition.performDefaultHandling, nil)
     }
+    
 }

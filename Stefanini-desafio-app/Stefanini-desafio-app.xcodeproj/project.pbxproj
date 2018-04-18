@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160E114B61C0507A73F90CC2 /* Pods_Stefanini_desafio_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61889539B5759F85B835AA3 /* Pods_Stefanini_desafio_app.framework */; };
 		22FE6E352086DD32002D811F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E342086DD32002D811F /* AppDelegate.swift */; };
 		22FE6E372086DD32002D811F /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E362086DD32002D811F /* HeroViewController.swift */; };
 		22FE6E3A2086DD32002D811F /* Hero.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FE6E382086DD32002D811F /* Hero.storyboard */; };
@@ -20,6 +21,10 @@
 		22FE6E6E2086EF09002D811F /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E6D2086EF09002D811F /* HeroTableViewCell.swift */; };
 		22FE6E712086F3CB002D811F /* HeroApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E702086F3CB002D811F /* HeroApi.swift */; };
 		22FE6E732086F42B002D811F /* DataRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FE6E722086F42B002D811F /* DataRequestDelegate.swift */; };
+		7882B3622087AAAE00DA651A /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7882B3612087AAAE00DA651A /* HeroDetailViewController.swift */; };
+		78D246F120878A0C00C353E5 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D246F020878A0C00C353E5 /* Hero.swift */; };
+		A315B620015DC410902DDCD4 /* Pods_Stefanini_desafio_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCBD528583356475F9A91B2 /* Pods_Stefanini_desafio_appUITests.framework */; };
+		ABD80BCCC9870A5FDB9CD84E /* Pods_Stefanini_desafio_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2982AEF5C508727AFB4DEB /* Pods_Stefanini_desafio_appTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		068D0CFE36C0AD270C29E642 /* Pods-Stefanini-desafio-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-app/Pods-Stefanini-desafio-app.debug.xcconfig"; sourceTree = "<group>"; };
+		0F3FA24B2BC3018F6A1395F3 /* Pods-Stefanini-desafio-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-appTests/Pods-Stefanini-desafio-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FCBD528583356475F9A91B2 /* Pods_Stefanini_desafio_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stefanini_desafio_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FE6E312086DD32002D811F /* Stefanini-desafio-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stefanini-desafio-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FE6E342086DD32002D811F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22FE6E362086DD32002D811F /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +67,15 @@
 		22FE6E6D2086EF09002D811F /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		22FE6E702086F3CB002D811F /* HeroApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroApi.swift; sourceTree = "<group>"; };
 		22FE6E722086F42B002D811F /* DataRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestDelegate.swift; sourceTree = "<group>"; };
+		29AF3C49C3AF5095E124C446 /* Pods-Stefanini-desafio-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-appUITests/Pods-Stefanini-desafio-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		537585FC83AFE6C094C50632 /* Pods-Stefanini-desafio-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-appTests/Pods-Stefanini-desafio-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E64F13DAB978CF8E12F4780 /* Pods-Stefanini-desafio-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-app/Pods-Stefanini-desafio-app.release.xcconfig"; sourceTree = "<group>"; };
+		7882B3612087AAAE00DA651A /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		78D246AA20876F9100C353E5 /* Stefanini-desafio-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stefanini-desafio-app-Bridging-Header.h"; sourceTree = "<group>"; };
+		78D246F020878A0C00C353E5 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		7E2982AEF5C508727AFB4DEB /* Pods_Stefanini_desafio_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stefanini_desafio_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDBC082CF36E896B310085CE /* Pods-Stefanini-desafio-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stefanini-desafio-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stefanini-desafio-appUITests/Pods-Stefanini-desafio-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F61889539B5759F85B835AA3 /* Pods_Stefanini_desafio_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stefanini_desafio_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160E114B61C0507A73F90CC2 /* Pods_Stefanini_desafio_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD80BCCC9870A5FDB9CD84E /* Pods_Stefanini_desafio_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A315B620015DC410902DDCD4 /* Pods_Stefanini_desafio_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,9 @@
 				22FE6E4B2086DD35002D811F /* Stefanini-desafio-appTests */,
 				22FE6E562086DD35002D811F /* Stefanini-desafio-appUITests */,
 				22FE6E322086DD32002D811F /* Products */,
+				78D246AA20876F9100C353E5 /* Stefanini-desafio-app-Bridging-Header.h */,
+				F5C30D4BE62FD77259385D87 /* Pods */,
+				C8BBC9EB544C974BF44E983F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				22FE6E362086DD32002D811F /* HeroViewController.swift */,
+				7882B3612087AAAE00DA651A /* HeroDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +187,7 @@
 				22FE6E6F2086F3AF002D811F /* API */,
 				22FE6E682086DDC1002D811F /* ApiUtils.swift */,
 				22FE6E722086F42B002D811F /* DataRequestDelegate.swift */,
+				78D246F020878A0C00C353E5 /* Hero.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +208,29 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		C8BBC9EB544C974BF44E983F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F61889539B5759F85B835AA3 /* Pods_Stefanini_desafio_app.framework */,
+				7E2982AEF5C508727AFB4DEB /* Pods_Stefanini_desafio_appTests.framework */,
+				1FCBD528583356475F9A91B2 /* Pods_Stefanini_desafio_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5C30D4BE62FD77259385D87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				068D0CFE36C0AD270C29E642 /* Pods-Stefanini-desafio-app.debug.xcconfig */,
+				6E64F13DAB978CF8E12F4780 /* Pods-Stefanini-desafio-app.release.xcconfig */,
+				0F3FA24B2BC3018F6A1395F3 /* Pods-Stefanini-desafio-appTests.debug.xcconfig */,
+				537585FC83AFE6C094C50632 /* Pods-Stefanini-desafio-appTests.release.xcconfig */,
+				EDBC082CF36E896B310085CE /* Pods-Stefanini-desafio-appUITests.debug.xcconfig */,
+				29AF3C49C3AF5095E124C446 /* Pods-Stefanini-desafio-appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FE6E5C2086DD35002D811F /* Build configuration list for PBXNativeTarget "Stefanini-desafio-app" */;
 			buildPhases = (
+				9DB59D652D94FBDF267FE1B1 /* [CP] Check Pods Manifest.lock */,
 				22FE6E2D2086DD32002D811F /* Sources */,
 				22FE6E2E2086DD32002D811F /* Frameworks */,
 				22FE6E2F2086DD32002D811F /* Resources */,
+				C4360AAE8165FF6C2B53B442 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FE6E5F2086DD35002D811F /* Build configuration list for PBXNativeTarget "Stefanini-desafio-appTests" */;
 			buildPhases = (
+				328EAA144A63AB35288A68A4 /* [CP] Check Pods Manifest.lock */,
 				22FE6E442086DD35002D811F /* Sources */,
 				22FE6E452086DD35002D811F /* Frameworks */,
 				22FE6E462086DD35002D811F /* Resources */,
@@ -225,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22FE6E622086DD35002D811F /* Build configuration list for PBXNativeTarget "Stefanini-desafio-appUITests" */;
 			buildPhases = (
+				568808AC8BB2CCE72187B850 /* [CP] Check Pods Manifest.lock */,
 				22FE6E4F2086DD35002D811F /* Sources */,
 				22FE6E502086DD35002D811F /* Frameworks */,
 				22FE6E512086DD35002D811F /* Resources */,
@@ -251,6 +303,7 @@
 				TargetAttributes = {
 					22FE6E302086DD32002D811F = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					22FE6E472086DD35002D811F = {
 						CreatedOnToolsVersion = 9.3;
@@ -310,6 +363,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		328EAA144A63AB35288A68A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stefanini-desafio-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		568808AC8BB2CCE72187B850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stefanini-desafio-appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB59D652D94FBDF267FE1B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stefanini-desafio-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4360AAE8165FF6C2B53B442 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Stefanini-desafio-app/Pods-Stefanini-desafio-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stefanini-desafio-app/Pods-Stefanini-desafio-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22FE6E2D2086DD32002D811F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -318,8 +446,10 @@
 				22FE6E732086F42B002D811F /* DataRequestDelegate.swift in Sources */,
 				22FE6E692086DDC1002D811F /* ApiUtils.swift in Sources */,
 				22FE6E3D2086DD32002D811F /* Stefanini_desafio_app.xcdatamodeld in Sources */,
+				78D246F120878A0C00C353E5 /* Hero.swift in Sources */,
 				22FE6E712086F3CB002D811F /* HeroApi.swift in Sources */,
 				22FE6E372086DD32002D811F /* HeroViewController.swift in Sources */,
+				7882B3622087AAAE00DA651A /* HeroDetailViewController.swift in Sources */,
 				22FE6E352086DD32002D811F /* AppDelegate.swift in Sources */,
 				22FE6E6E2086EF09002D811F /* HeroTableViewCell.swift in Sources */,
 			);
@@ -492,8 +622,10 @@
 		};
 		22FE6E5D2086DD35002D811F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068D0CFE36C0AD270C29E642 /* Pods-Stefanini-desafio-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKFCJ2D2M6;
 				INFOPLIST_FILE = "Stefanini-desafio-app/Info.plist";
@@ -503,6 +635,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gabrielcarvalho.Stefanini-desafio-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stefanini-desafio-app-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -510,8 +644,10 @@
 		};
 		22FE6E5E2086DD35002D811F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E64F13DAB978CF8E12F4780 /* Pods-Stefanini-desafio-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKFCJ2D2M6;
 				INFOPLIST_FILE = "Stefanini-desafio-app/Info.plist";
@@ -521,6 +657,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gabrielcarvalho.Stefanini-desafio-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stefanini-desafio-app-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -528,6 +665,7 @@
 		};
 		22FE6E602086DD35002D811F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3FA24B2BC3018F6A1395F3 /* Pods-Stefanini-desafio-appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +687,7 @@
 		};
 		22FE6E612086DD35002D811F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537585FC83AFE6C094C50632 /* Pods-Stefanini-desafio-appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +709,7 @@
 		};
 		22FE6E632086DD35002D811F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBC082CF36E896B310085CE /* Pods-Stefanini-desafio-appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +730,7 @@
 		};
 		22FE6E642086DD35002D811F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29AF3C49C3AF5095E124C446 /* Pods-Stefanini-desafio-appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

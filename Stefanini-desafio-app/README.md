@@ -8,6 +8,7 @@ Link da API: https://developer.marvel.com/documentation/getting_started
 O aplicativo deve conter as seguintes funcionalidades:
 
 Listar Heróis
+
 Detalhar Herói
 
 Dicas importantes:

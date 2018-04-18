@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SaH-8i-cOq">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SaH-8i-cOq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeroTableViewCell" rowHeight="80" id="83n-wF-knI" customClass="HeroTableViewCell" customModule="Stefanini_desafio_app" customModuleProvider="target">
@@ -30,20 +29,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stefanini256" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-ds-2CE">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stefanini256" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-ds-2CE">
                                                     <rect key="frame" x="15" y="6" width="66" height="66"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="66" id="3E1-7Y-RcL"/>
+                                                        <constraint firstAttribute="width" constant="66" id="75Z-xC-ms9"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hero Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-4J-OUr">
-                                                    <rect key="frame" x="89" y="11" width="87" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hero Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Of-4J-OUr">
+                                                    <rect key="frame" x="89" y="11" width="271" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLa-fS-cVk">
+                                                    <rect key="frame" x="89" y="40" width="271" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dJL-ds-2CE" firstAttribute="leading" secondItem="mc6-gA-p9L" secondAttribute="leading" constant="15" id="GfZ-ls-jUy"/>
+                                                <constraint firstItem="6Of-4J-OUr" firstAttribute="top" secondItem="dJL-ds-2CE" secondAttribute="top" constant="5" id="S5T-Tz-uZt"/>
+                                                <constraint firstAttribute="trailing" secondItem="zLa-fS-cVk" secondAttribute="trailing" constant="15" id="Tr0-w3-I7n"/>
+                                                <constraint firstItem="dJL-ds-2CE" firstAttribute="top" secondItem="mc6-gA-p9L" secondAttribute="top" constant="6" id="oWI-4i-zeF"/>
+                                                <constraint firstItem="zLa-fS-cVk" firstAttribute="top" secondItem="6Of-4J-OUr" secondAttribute="bottom" constant="8" id="pua-Me-c1a"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Of-4J-OUr" secondAttribute="trailing" constant="15" id="rMl-VU-nZL"/>
+                                                <constraint firstItem="zLa-fS-cVk" firstAttribute="leading" secondItem="6Of-4J-OUr" secondAttribute="leading" id="suL-ck-WQX"/>
+                                                <constraint firstItem="6Of-4J-OUr" firstAttribute="leading" secondItem="dJL-ds-2CE" secondAttribute="trailing" constant="8" id="wdz-w2-Yip"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="heroDescription" destination="zLa-fS-cVk" id="dog-CR-q8e"/>
                                             <outlet property="heroImage" destination="dJL-ds-2CE" id="z2U-AU-bJM"/>
                                             <outlet property="heroName" destination="6Of-4J-OUr" id="ekW-wL-wCa"/>
                                         </connections>
@@ -54,20 +72,107 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="4zu-8M-CVJ"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppq-fr-9ep">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Marvel App" id="u2b-Te-XYb"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SaH-8i-cOq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nfr-4i-N8n"/>
+                            <constraint firstItem="SaH-8i-cOq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="j5w-XN-R4C"/>
+                            <constraint firstItem="SaH-8i-cOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="t77-Vz-JLv"/>
+                            <constraint firstItem="SaH-8i-cOq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yV3-zV-lN1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="SaH-8i-cOq" id="sa8-Qi-9dU"/>
+                        <segue destination="GvP-RJ-PlU" kind="show" identifier="HeroDetail" id="7cu-tc-BBH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
         </scene>
+        <!--Hero Detail View Controller-->
+        <scene sceneID="ERI-x6-J9q">
+            <objects>
+                <viewController id="GvP-RJ-PlU" customClass="HeroDetailViewController" customModule="Stefanini_desafio_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oCx-bL-vaF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihc-sf-PK6">
+                                <rect key="frame" x="30" y="55" width="315" height="577"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stefanini256" translatesAutoresizingMaskIntoConstraints="NO" id="htE-pA-iQl">
+                                        <rect key="frame" x="62" y="38" width="190" height="190"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="qZ9-4F-fNU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow128" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-cm-jDu">
+                                        <rect key="frame" x="137" y="0.0" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="XpM-2D-crp"/>
+                                            <constraint firstAttribute="height" constant="30" id="lYV-DB-Sn0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of Hero" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDT-rg-GvK">
+                                        <rect key="frame" x="12" y="236" width="291" height="315"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="DDT-rg-GvK" firstAttribute="leading" secondItem="ihc-sf-PK6" secondAttribute="leading" constant="12" id="7tk-pf-rlW"/>
+                                    <constraint firstItem="dpd-cm-jDu" firstAttribute="top" secondItem="ihc-sf-PK6" secondAttribute="top" id="Hpb-Se-B0f"/>
+                                    <constraint firstAttribute="bottom" secondItem="DDT-rg-GvK" secondAttribute="bottom" constant="26" id="Pq6-fN-5XA"/>
+                                    <constraint firstItem="dpd-cm-jDu" firstAttribute="centerX" secondItem="htE-pA-iQl" secondAttribute="centerX" id="ScV-wU-QVy"/>
+                                    <constraint firstItem="dpd-cm-jDu" firstAttribute="centerX" secondItem="ihc-sf-PK6" secondAttribute="centerX" id="Wfj-ro-lTF"/>
+                                    <constraint firstItem="DDT-rg-GvK" firstAttribute="top" secondItem="htE-pA-iQl" secondAttribute="bottom" constant="8" symbolic="YES" id="hvF-Bh-LqW"/>
+                                    <constraint firstItem="htE-pA-iQl" firstAttribute="leading" secondItem="ihc-sf-PK6" secondAttribute="leading" constant="62" id="j43-GE-9Q2"/>
+                                    <constraint firstItem="htE-pA-iQl" firstAttribute="centerX" secondItem="DDT-rg-GvK" secondAttribute="centerX" id="pLT-iS-P5A"/>
+                                    <constraint firstItem="htE-pA-iQl" firstAttribute="top" secondItem="dpd-cm-jDu" secondAttribute="bottom" constant="8" symbolic="YES" id="tE5-qN-Bbq"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nOk-JA-t3V" appends="YES" id="wPL-AU-D3L"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ihc-sf-PK6" firstAttribute="leading" secondItem="Kxo-kS-9QL" secondAttribute="leading" constant="30" id="0BJ-VI-hhl"/>
+                            <constraint firstItem="ihc-sf-PK6" firstAttribute="top" secondItem="Kxo-kS-9QL" secondAttribute="top" constant="35" id="EMc-27-jfu"/>
+                            <constraint firstItem="Kxo-kS-9QL" firstAttribute="bottom" secondItem="ihc-sf-PK6" secondAttribute="bottom" constant="35" id="Ixd-Sn-54c"/>
+                            <constraint firstItem="ihc-sf-PK6" firstAttribute="centerX" secondItem="oCx-bL-vaF" secondAttribute="centerX" id="u6k-bT-mt8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kxo-kS-9QL"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionOfHero" destination="DDT-rg-GvK" id="FKo-88-Zxc"/>
+                        <outlet property="heroImage" destination="htE-pA-iQl" id="IEu-fN-Sbs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTe-Xu-kXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="nOk-JA-t3V">
+                    <connections>
+                        <action selector="swipeDownAction:" destination="GvP-RJ-PlU" id="Emg-Cx-vfQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1029.5999999999999" y="131.78410794602701"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="downArrow128" width="128" height="128"/>
         <image name="stefanini256" width="256" height="256"/>
     </resources>
 </document>
